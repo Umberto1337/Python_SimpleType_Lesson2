@@ -5,18 +5,18 @@
 # ✔ Точность вычислений должна составлять
 # не менее 42 знаков после запятой.
 
-# import math
-# import decimal
+import math
+import decimal
 
-# decimal.getcontext().prec = 50
-# PI = decimal.Decimal(math.pi)
+decimal.getcontext().prec = 50
+PI = decimal.Decimal(math.pi)
 
-# d = decimal.Decimal(input('Введите диаметр: '))
-# while d > 1000:
-#     print('Введено число вне диапазона, больше 1000')
-#     d = decimal.Decimal(input('Введите диаметр: '))
+d = decimal.Decimal(input('Введите диаметр: '))
+while d > 1000:
+    print('Введено число вне диапазона, больше 1000')
+    d = decimal.Decimal(input('Введите диаметр: '))
 
-# s = PI * (d / 2) ** 2
-# l = PI * d
-# print(f'{s=}')
-# print(f'{l=}')
+s = PI * (d / 2) ** 2
+l = PI * d
+print(f'{s=}')
+print(f'{l=}')
